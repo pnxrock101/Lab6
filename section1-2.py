@@ -10,12 +10,12 @@ class Vehicle:
                     f'Year:         :{self.year}\n'\
                     f'Make:         :{self.make}\n'\
                     f'Model:        :{self.model}\n'\
-                    f'Color:        :{self.color}\n'\
+                    f'Color:        :{self.color}'
         return details
 
     def getShrtDeets(self):
         shortDet =  f'Make:         :{self.make}\n'\
-                    f'Model:        :{self.model}\n'\
+                    f'Model:        :{self.model}'
         return shortDet
 
 vehCar1 = Vehicle('Ford', 'Mustang', '1964', 'Red')
@@ -38,11 +38,11 @@ class Beer:
                     f'Name:             :{self.name}\n'\
                     f'Style:            :{Beer.style}\n'\
                     f'Location:         :{self.location}\n'\
-                    f'Rating:           :{self.rating}\n'\
+                    f'Rating:           :{self.rating}'
         return notes
     def shortNote(self):
         shNote =    f'Brewery:          :{self.brewery}\n'\
-                    f'Name:             :{self.name}\n'\
+                    f'Name:             :{self.name}'
         return shNote
 
 beerStout1 = Beer('Founders', 'Michigan', 'Breakfast Stout', '100')
@@ -65,11 +65,11 @@ class Whiskey:
                     f'Name:             :{self.name}\n'\
                     f'Style:            :{Whiskey.style}\n'\
                     f'Location:         :{self.location}\n'\
-                    f'Rating:           :{self.rating}\n'\
+                    f'Rating:           :{self.rating}'
         return info
     def shortInfo(self):
         shrtIn =    f'Distillary:       :{self.distillary}\n'\
-                    f'Name:             :{self.name}\n'\
+                    f'Name:             :{self.name}'
         return shrtIn
 
 wskRye1 = Whiskey('WhistlePig Farm', 'Vermont', 'Straight Rye', '89')
@@ -91,11 +91,11 @@ class Games:
                     f'Title:                    :{self.title}\n'\
                     f'Genre:                    :{Games.type}\n'\
                     f'Rating:                   :{self.rating}\n'\
-                    f'Playthrough Time:         :{self.time}\n'\
+                    f'Playthrough Time:         :{self.time}'
         return game
     def ShrtGm(self):
         shtGame =   f'Title:                    :{self.title}\n'\
-                    f'Genre:                    :{Games.type}\n'\
+                    f'Genre:                    :{Games.type}'
         return shtGame
 
 gmRPG1 = Games('Blizzard', 'Diablo 3', '9 of 10', '84 Hrs')
@@ -118,12 +118,12 @@ class Turbos:
                     f'Manufacturor:             :{self.manufacturor}\n'\
                     f'Model:                    :{self.mod}\n'\
                     f'Inducer:                  :{Games.inducer}\n'\
-                    f'Exducer:                  :{self.exducer}\n'\
+                    f'Exducer:                  :{self.exducer}'
         return game
     def shortTurbo(self):
         shrtTurbo = f'Manufacturor:             :{self.manufacturor}\n'\
-                    f'Model:                    :{self.mod}\n'\
-        return shrtTurbo            
+                    f'Model:                    :{self.mod}'
+        return shrtTurbo
 
 Turb1 = Turbos('DNA Motoring', 'GT45', '69mm', '98mm')
 Turb2 = Turbos('Garret', 'GT3782VA', '59mm', '82mm')
