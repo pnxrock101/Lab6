@@ -12,6 +12,7 @@ class Vehicle:
                     f'Model:        :{self.model}\n'\
                     f'Color:        :{self.color}'
         return details
+
     def getShrtDeets(self):
         shortDet =  f'Make:         :{self.make}\n'\
                     f'Model:        :{self.model}'
@@ -116,7 +117,7 @@ class Turbos:
         turbo  =    f'Power Adder Type:         :{Turbos.type}\n'\
                     f'Manufacturor:             :{self.manufacturor}\n'\
                     f'Model:                    :{self.mod}\n'\
-                    f'Inducer:                  :{Games.inducer}\n'\
+                    f'Inducer:                  :{self.inducer}\n'\
                     f'Exducer:                  :{self.exducer}'
         return game
     def shortTurbo(self):
