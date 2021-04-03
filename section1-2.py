@@ -12,7 +12,6 @@ class Vehicle:
                     f'Model:        :{self.model}\n'\
                     f'Color:        :{self.color}'
         return details
-
     def getShrtDeets(self):
         shortDet =  f'Make:         :{self.make}\n'\
                     f'Model:        :{self.model}'
