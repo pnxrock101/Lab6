@@ -119,7 +119,7 @@ class Turbos:
                     f'Model:                    :{self.mod}\n'\
                     f'Inducer:                  :{self.inducer}\n'\
                     f'Exducer:                  :{self.exducer}'
-        return game
+        return turbo
     def shortTurbo(self):
         shrtTurbo = f'Manufacturor:             :{self.manufacturor}\n'\
                     f'Model:                    :{self.mod}'
