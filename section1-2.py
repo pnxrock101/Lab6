@@ -13,6 +13,11 @@ class Vehicle:
                     f'Color:        :{self.color}\n'\
         return details
 
+    def getShrtDeets(self):
+        shortDet =  f'Make:         :{self.make}\n'\
+                    f'Model:        :{self.model}\n'\
+        return shortDet
+
 vehCar1 = Vehicle('Ford', 'Mustang', '1964', 'Red')
 vehCar2 = Vehicle('Chevrolet', 'Camaro', '1969', 'Blue')
 vehCar3 = Vehicle('Dodge', 'Charger', '1971', 'Black')
@@ -35,6 +40,10 @@ class Beer:
                     f'Location:         :{self.location}\n'\
                     f'Rating:           :{self.rating}\n'\
         return notes
+    def shortNote(self):
+        shNote =    f'Brewery:          :{self.brewery}\n'\
+                    f'Name:             :{self.name}\n'\
+        return shNote
 
 beerStout1 = Beer('Founders', 'Michigan', 'Breakfast Stout', '100')
 beerStout2 = Beer('Atlantic', 'Maine', 'Cadillac Mountain Stout', '93')
@@ -58,6 +67,10 @@ class Whiskey:
                     f'Location:         :{self.location}\n'\
                     f'Rating:           :{self.rating}\n'\
         return info
+    def shortInfo(self):
+        shrtIn =    f'Distillary:       :{self.distillary}\n'\
+                    f'Name:             :{self.name}\n'\
+        return shrtIn
 
 wskRye1 = Whiskey('WhistlePig Farm', 'Vermont', 'Straight Rye', '89')
 wskRye2 = Whiskey('Jack Daniel', 'Tennessee', 'Tennessee Straight Rye', '84')
@@ -80,8 +93,39 @@ class Games:
                     f'Rating:                   :{self.rating}\n'\
                     f'Playthrough Time:         :{self.time}\n'\
         return game
+    def ShrtGm(self):
+        shtGame =   f'Title:                    :{self.title}\n'\
+                    f'Genre:                    :{Games.type}\n'\
+        return shtGame
 
 gmRPG1 = Games('Blizzard', 'Diablo 3', '9 of 10', '84 Hrs')
 gmRPG2 = Games('Bethesda', 'Fallout 4', '7 of 10', '80 Hrs')
 gmRPG3 = Games('CD Projekt', 'Cyberpunk 2077', '7 of 10', '30 Hrs')
 gmRPG4 = Games('Obsidian', 'The Outer Worlds', '9 of 10', '25 Hrs')
+
+
+
+
+class Turbos:
+    type = 'Turbo'
+    def __init__(self, manufacturor, mod, inducer, exducer):
+        self.manufacturor = manufacturor
+        self.mod = mod
+        self.inducer = inducer
+        self.exducer = exducer
+    def getTurbos(self):
+        turbo  =    f'Power Adder Type:         :{Turbos.type}\n'\
+                    f'Manufacturor:             :{self.manufacturor}\n'\
+                    f'Model:                    :{self.mod}\n'\
+                    f'Inducer:                  :{Games.inducer}\n'\
+                    f'Exducer:                  :{self.exducer}\n'\
+        return game
+    def shortTurbo(self):
+        shrtTurbo = f'Manufacturor:             :{self.manufacturor}\n'\
+                    f'Model:                    :{self.mod}\n'\
+        return shrtTurbo            
+
+Turb1 = Turbos('DNA Motoring', 'GT45', '69mm', '98mm')
+Turb2 = Turbos('Garret', 'GT3782VA', '59mm', '82mm')
+Turb3 = Turbos('VS Racing', '7875', '78mm', '75mm')
+Turb4 = Turbos('DNA Motoring', 'GT35', '61.5mm', '81.5mm')
